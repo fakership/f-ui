@@ -3,9 +3,6 @@
 ## Installation
 ```shell
 npm i f-ui -S
-
-# for Vue 1.x
-npm i f-ui@1 -S
 ```
 
 ## Usage
