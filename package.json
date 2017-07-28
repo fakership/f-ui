@@ -1,12 +1,12 @@
 {
   "name": "f-ui",
-  "version": "2.2.6",
+  "version": "0.0.1",
   "description": "Mobile UI elements for vue.js",
   "keywords": [
     "component",
     "vue",
     "mobile",
-    "eleme"
+    "f"
   ],
   "main": "lib/f-ui.common.js",
   "style": "lib/style.css",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/ElemeFE/f-ui/issues"
   },
-  "author": "elemefe",
+  "author": "fakership",
   "license": "MIT",
   "dependencies": {
     "array-find-index": "^1.0.2",
