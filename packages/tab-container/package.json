@@ -1,12 +1,10 @@
 {
   "name": "f-tab-container",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "author": "fakership",
   "homepage": "https://github.com/fakership/f-ui",
   "license": "MIT",
-  "repository": "https://github.com/fakership/f-ui/tree/master/components/f-tab-container",
-  "dependencies": {
-  }
+  "repository": "https://github.com/fakership/f-ui/tree/master/components/f-tab-container"
 }

@@ -1,11 +1,10 @@
 {
   "name": "f-loadmore",
   "description": "",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "lib/index.js",
   "author": "fakership",
   "homepage": "https://github.com/fakership/f-ui",
   "license": "MIT",
-  "repository": "https://github.com/fakership/f-ui/tree/master/components/f-loadmore",
-  "dependencies": {}
+  "repository": "https://github.com/fakership/f-ui/tree/master/components/f-loadmore"
 }

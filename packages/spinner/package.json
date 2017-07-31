@@ -1,6 +1,6 @@
 {
   "name": "f-spinner",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A spinner component for vue.js",
   "main": "lib/index.js",
   "files": [
@@ -15,7 +15,5 @@
     "url": "https://github.com/f-ui/f-spinner/issues"
   },
   "author": "qingwei-li<cinwell.li@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-  }
+  "license": "MIT"
 }
