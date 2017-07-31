@@ -53,17 +53,17 @@ Vue.component(Checklist.name, Checklist);
 
 ```javascript
 import Vue from 'vue';
-import Mint from 'f-ui';
+import F from 'f-ui';
 import 'f-ui/lib/style.css';
 
 Vue.use(F);
 
 // import specified component
 
-import MtRadio from 'f-ui/lib/radio';
+import FRadio from 'f-ui/lib/radio';
 import 'f-ui/lib/radio/style.css';
 
-Vue.component(MtRadio.name, MtRadio);
+Vue.component(FRadio.name, MtRadio);
 ```
 
 ## babel-plugin-component
