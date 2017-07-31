@@ -1,18 +1,18 @@
 <template>
-  <div class="mint-msgbox-wrapper">
+  <div class="f-msgbox-wrapper">
     <transition name="msgbox-bounce">
-      <div class="mint-msgbox" v-show="value">
-        <div class="mint-msgbox-header" v-if="title !== ''">
-          <div class="mint-msgbox-title">{{ title }}</div>
+      <div class="f-msgbox" v-show="value">
+        <div class="f-msgbox-header" v-if="title !== ''">
+          <div class="f-msgbox-title">{{ title }}</div>
         </div>
-        <div class="mint-msgbox-content" v-if="message !== ''">
-          <div class="mint-msgbox-message" v-html="message"></div>
-          <div class="mint-msgbox-input" v-show="showInput">
+        <div class="f-msgbox-content" v-if="message !== ''">
+          <div class="f-msgbox-message" v-html="message"></div>
+          <div class="f-msgbox-input" v-show="showInput">
             <input v-model="inputValue" :placeholder="inputPlaceholder" ref="input">
-            <div class="mint-msgbox-errormsg" :style="{ visibility: !!editorErrorMessage ? 'visible' : 'hidden' }">{{ editorErrorMessage }}</div>
+            <div class="f-msgbox-errormsg" :style="{ visibility: !!editorErrorMessage ? 'visible' : 'hidden' }">{{ editorErrorMessage }}</div>
           </div>
         </div>
-        <div class="mint-msgbox-btns">
+        <div class="f-msgbox-btns">
           <button :class="[ cancelButtonClasses ]" v-show="showCancelButton" @click="handleAction('cancel')">{{ cancelButtonText }}</button>
           <button :class="[ confirmButtonClasses ]" v-show="showConfirmButton" @click="handleAction('confirm')">{{ confirmButtonText }}</button>
         </div>
@@ -22,7 +22,7 @@
 </template>
 
 <style>
-  @component-namespace mint {
+  @component-namespace f {
     @component msgbox {
       position: fixed;
       top: 50%;
@@ -179,16 +179,16 @@
 
     computed: {
       confirmButtonClasses() {
-        let classes = 'mint-msgbox-btn mint-msgbox-confirm ' + this.confirmButtonClass;
+        let classes = 'f-msgbox-btn f-msgbox-confirm ' + this.confirmButtonClass;
         if (this.confirmButtonHighlight) {
-          classes += ' mint-msgbox-confirm-highlight';
+          classes += ' f-msgbox-confirm-highlight';
         }
         return classes;
       },
       cancelButtonClasses() {
-        let classes = 'mint-msgbox-btn mint-msgbox-cancel ' + this.cancelButtonClass;
+        let classes = 'f-msgbox-btn f-msgbox-cancel ' + this.cancelButtonClass;
         if (this.cancelButtonHighlight) {
-          classes += ' mint-msgbox-cancel-highlight';
+          classes += ' f-msgbox-cancel-highlight';
         }
         return classes;
       }

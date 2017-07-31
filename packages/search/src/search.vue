@@ -1,7 +1,7 @@
 <template>
-  <div class="mint-search">
-    <div class="mint-searchbar">
-      <div class="mint-searchbar-inner">
+  <div class="f-search">
+    <div class="f-searchbar">
+      <div class="f-searchbar-inner">
         <i class="mintui mintui-search"></i>
         <input
         ref="input"
@@ -9,17 +9,17 @@
         type="search"
         v-model="currentValue"
         :placeholder="placeholder"
-        class="mint-searchbar-core">
+        class="f-searchbar-core">
       </div>
       <a
-        class="mint-searchbar-cancel"
+        class="f-searchbar-cancel"
         @click="visible = false, currentValue = ''"
         v-show="visible"
         v-text="cancelText">
       </a>
     </div>
-    <div class="mint-search-list" v-show="show || currentValue">
-      <div class="mint-search-list-warp">
+    <div class="f-search-list" v-show="show || currentValue">
+      <div class="f-search-list-warp">
         <slot>
           <x-cell v-for="(item, index) in result" :key="index" :title="item"></x-cell>
         </slot>
@@ -96,7 +96,7 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component search {
       height: 100%;
       height: 100vh;

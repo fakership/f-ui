@@ -2,7 +2,7 @@
   <section class="page-demo">
     <div v-for="group in navs">
       <div class="page-title" v-text="group.title"></div>
-      <mt-cell
+      <f-cell
         v-for="item in group.list"
         :to="item.path"
         is-link>
@@ -10,7 +10,7 @@
           <i :class="['indexicon', 'icon-' + item.icon]"></i>
           <span>{{ item.name }}</span>
         </div>
-      </mt-cell>
+      </f-cell>
     </div>
   </section>
 </template>

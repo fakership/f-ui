@@ -1,29 +1,29 @@
 <template>
-  <a class="mint-cell" :href="href">
-    <span class="mint-cell-mask" v-if="isLink"></span>
-    <div class="mint-cell-left">
+  <a class="f-cell" :href="href">
+    <span class="f-cell-mask" v-if="isLink"></span>
+    <div class="f-cell-left">
       <slot name="left"></slot>
     </div>
-    <div class="mint-cell-wrapper">
-      <div class="mint-cell-title">
+    <div class="f-cell-wrapper">
+      <div class="f-cell-title">
         <slot name="icon">
           <i v-if="icon" class="mintui" :class="'mintui-' + icon"></i>
         </slot>
         <slot name="title">
-          <span class="mint-cell-text" v-text="title"></span>
-          <span v-if="label" class="mint-cell-label" v-text="label"></span>
+          <span class="f-cell-text" v-text="title"></span>
+          <span v-if="label" class="f-cell-label" v-text="label"></span>
         </slot>
       </div>
-      <div class="mint-cell-value" :class="{ 'is-link' : isLink }">
+      <div class="f-cell-value" :class="{ 'is-link' : isLink }">
         <slot>
           <span v-text="value"></span>
         </slot>
       </div>
     </div>
-    <div class="mint-cell-right">
+    <div class="f-cell-right">
       <slot name="right"></slot>
     </div>
-    <i v-if="isLink" class="mint-cell-allow-right"></i>
+    <i v-if="isLink" class="f-cell-allow-right"></i>
   </a>
 </template>
 
@@ -53,7 +53,7 @@ if (process.env.NODE_ENV === 'component') {
  * </mt-cell>
  */
 export default {
-  name: 'mt-cell',
+  name: 'f-cell',
 
   props: {
     to: [String, Object],
@@ -92,7 +92,7 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component cell {
       background-color: $color-white;
       box-sizing: border-box;
@@ -104,7 +104,7 @@ export default {
       text-decoration: none;
 
       &:first-child {
-        .mint-cell-wrapper {
+        .f-cell-wrapper {
           background-origin: border-box;
         }
       }
