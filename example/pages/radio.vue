@@ -2,25 +2,25 @@
   <div class="page-radio">
     <div class="page-title">radio</div>
 
-    <mt-radio
+    <f-radio
       class="page-part"
       title="单选框列表"
       v-model="value1"
       :options="options1" />
     <div>
-      <mt-cell title="选中的项">{{ value1 }}</mt-cell>
+      <f-cell title="选中的项">{{ value1 }}</f-cell>
     </div>
 
-    <mt-radio
+    <f-radio
       class="page-part"
       title="第二个单选框列表"
       v-model="value2"
       :options="options2" />
     <div>
-      <mt-cell title="选中的项">{{ value2 }}</mt-cell>
+      <f-cell title="选中的项">{{ value2 }}</f-cell>
     </div>
 
-    <mt-radio
+    <f-radio
       align="right"
       class="page-part"
       title="右对齐"

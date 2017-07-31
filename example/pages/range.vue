@@ -2,37 +2,37 @@
   <div class="page-range">
     <h1 class="page-title">Range</h1>
     <p class="page-range-header">基本功能</p>
-    <mt-cell v-for="item in cells1" :title="item.title" :label="'value:' + item.value">
-      <mt-range v-model="item.value">
+    <f-cell v-for="item in cells1" :title="item.title" :label="'value:' + item.value">
+      <f-range v-model="item.value">
         <div slot="start" v-if="item.start">{{ item.start }}</div>
         <div slot="end" v-if="item.end">{{ item.end }}</div>
-      </mt-range>
-    </mt-cell>
+      </f-range>
+    </f-cell>
     <p class="page-range-header">自定义</p>
-    <mt-cell v-for="item in cells2" :title="item.title" :label="'value:' + item.value">
-      <mt-range v-model="item.value" :min="item.min || 0" :max="item.max || 100" :step="item.step || 1" :bar-height="item.barHeight || 1" :disabled="item.disabled">
+    <f-cell v-for="item in cells2" :title="item.title" :label="'value:' + item.value">
+      <f-range v-model="item.value" :min="item.min || 0" :max="item.max || 100" :step="item.step || 1" :bar-height="item.barHeight || 1" :disabled="item.disabled">
         <div slot="start" v-if="item.start">{{ item.start }}</div>
         <div slot="end" v-if="item.end">{{ item.end }}</div>
-      </mt-range>
-    </mt-cell>
+      </f-range>
+    </f-cell>
     <p class="page-range-header">场景举例</p>
-    <mt-cell v-for="item in cells3" :title="item.title" :label="'value:' + item.value">
-      <mt-range v-model="item.value" :min="item.min || 0" :max="item.max || 100" :step="item.step || 1">
+    <f-cell v-for="item in cells3" :title="item.title" :label="'value:' + item.value">
+      <f-range v-model="item.value" :min="item.min || 0" :max="item.max || 100" :step="item.step || 1">
         <div slot="start" v-if="item.start" :style="{ 'font-size': item.start + 'px' }">{{ item.start }}</div>
         <div slot="end" v-if="item.end" :style="{ 'font-size': item.end + 'px' }">{{ item.end }}</div>
-      </mt-range>
-    </mt-cell>
+      </f-range>
+    </f-cell>
   </div>
 </template>
 
 <style>
   @component-namespace page {
     @component range {
-      .mt-range {
+      .f-range {
         width: 100%;
       }
 
-      .mint-cell-value {
+      .f-cell-value {
         flex: 2.5;
         position: relative;
       }

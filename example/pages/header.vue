@@ -1,41 +1,41 @@
 <template>
   <div>
-    <mt-header fixed title="固定在顶部"></mt-header>
+    <f-header fixed title="固定在顶部"></f-header>
     <div class="page-header-main">
       <div class="page-title">Header</div>
-      <mt-header title="标题过长会隐藏后面的内容啊哈哈哈哈">
+      <f-header title="标题过长会隐藏后面的内容啊哈哈哈哈">
         <router-link to="/" slot="left">
-          <mt-button icon="back">返回</mt-button>
+          <f-button icon="back">返回</f-button>
         </router-link>
-        <mt-button icon="more" slot="right"></mt-button>
-      </mt-header>
+        <f-button icon="more" slot="right"></f-button>
+      </f-header>
 
-      <mt-header title="多个按钮">
+      <f-header title="多个按钮">
         <router-link to="/" slot="left">
-          <mt-button icon="back">返回</mt-button>
+          <f-button icon="back">返回</f-button>
         </router-link>
-        <mt-button @click="handleClose">关闭</mt-button>
-        <mt-button icon="more" slot="right"></mt-button>
-      </mt-header>
+        <f-button @click="handleClose">关闭</f-button>
+        <f-button icon="more" slot="right"></f-button>
+      </f-header>
 
-      <mt-header title="左侧仅文字">
+      <f-header title="左侧仅文字">
         <router-link to="/" slot="left">
-            <mt-button>返回</mt-button>
+            <f-button>返回</f-button>
           </router-link>
-      </mt-header>
+      </f-header>
 
-      <mt-header title="右侧仅文字">
+      <f-header title="右侧仅文字">
         <router-link to="/" slot="right">
-          <mt-button>分享</mt-button>
+          <f-button>分享</f-button>
         </router-link>
-      </mt-header>
+      </f-header>
 
-      <mt-header title="仅图标">
+      <f-header title="仅图标">
         <router-link to="/" slot="left">
-          <mt-button icon="back"></mt-button>
+          <f-button icon="back"></f-button>
         </router-link>
-        <mt-button slot="right" icon="more"></mt-button>
-      </mt-header>
+        <f-button slot="right" icon="more"></f-button>
+      </f-header>
     </div>
 
   </div>

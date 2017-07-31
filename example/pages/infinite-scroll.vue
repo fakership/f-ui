@@ -7,7 +7,7 @@
         <li v-for="item in list" class="page-infinite-listitem">{{ item }}</li>
       </ul>
       <p v-show="loading" class="page-infinite-loading">
-        <mt-spinner type="fading-circle"></mt-spinner>
+        <f-spinner type="fading-circle"></f-spinner>
         加载中...
       </p>
     </div>

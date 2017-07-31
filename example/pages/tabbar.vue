@@ -3,48 +3,48 @@
     <div class="page-wrap">
       <div class="page-title">Tabbar</div>
       <div>
-        <mt-cell class="page-part" title="当前选中" :value="selected" />
+        <f-cell class="page-part" title="当前选中" :value="selected" />
       </div>
 
-      <mt-tab-container class="page-tabbar-container" v-model="selected">
-        <mt-tab-container-item id="外卖">
-          <mt-cell v-for="n in 10" :title="'餐厅 ' + n" />
-        </mt-tab-container-item>
-        <mt-tab-container-item id="订单">
-          <mt-cell v-for="n in 5" :title="'订单 ' + n" />
-        </mt-tab-container-item>
-        <mt-tab-container-item id="发现">
-          <mt-cell v-for="n in 7" :title="'发现 ' + n" />
-        </mt-tab-container-item>
-        <mt-tab-container-item id="我的">
+      <f-tab-container class="page-tabbar-container" v-model="selected">
+        <f-tab-container-item id="外卖">
+          <f-cell v-for="n in 10" :title="'餐厅 ' + n" />
+        </f-tab-container-item>
+        <f-tab-container-item id="订单">
+          <f-cell v-for="n in 5" :title="'订单 ' + n" />
+        </f-tab-container-item>
+        <f-tab-container-item id="发现">
+          <f-cell v-for="n in 7" :title="'发现 ' + n" />
+        </f-tab-container-item>
+        <f-tab-container-item id="我的">
           <div class="page-part">
-            <mt-cell v-for="n in 12" :title="'我的 ' + n" />
+            <f-cell v-for="n in 12" :title="'我的 ' + n" />
           </div>
           <router-link to="/">
-            <mt-button type="danger" size="large">退出</mt-button>
+            <f-button type="danger" size="large">退出</f-button>
           </router-link>
-        </mt-tab-container-item>
-      </mt-tab-container>
+        </f-tab-container-item>
+      </f-tab-container>
     </div>
 
-    <mt-tabbar v-model="selected" fixed>
-      <mt-tab-item id="外卖">
+    <f-tabbar v-model="selected" fixed>
+      <f-tab-item id="外卖">
         <img slot="icon" src="../assets/100x100.png">
         外卖
-      </mt-tab-item>
-      <mt-tab-item id="订单">
+      </f-tab-item>
+      <f-tab-item id="订单">
         <img slot="icon" src="../assets/100x100.png">
         订单
-      </mt-tab-item>
-      <mt-tab-item id="发现">
+      </f-tab-item>
+      <f-tab-item id="发现">
         <img slot="icon" src="../assets/100x100.png">
         发现
-      </mt-tab-item>
-      <mt-tab-item id="我的">
+      </f-tab-item>
+      <f-tab-item id="我的">
         <img slot="icon" src="../assets/100x100.png">
         我的
-      </mt-tab-item>
-    </mt-tabbar>
+      </f-tab-item>
+    </f-tabbar>
   </div>
 </template>
 

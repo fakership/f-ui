@@ -1,22 +1,22 @@
 <template>
   <div>
     <div class="nav">
-      <mt-button size="small" @click.native.prevent="active = 'tab-container1'">tab 1</mt-button>
-      <mt-button size="small" @click.native.prevent="active = 'tab-container2'">tab 2</mt-button>
-      <mt-button size="small" @click.native.prevent="active = 'tab-container3'">tab 3</mt-button>
+      <f-button size="small" @click.native.prevent="active = 'tab-container1'">tab 1</f-button>
+      <f-button size="small" @click.native.prevent="active = 'tab-container2'">tab 2</f-button>
+      <f-button size="small" @click.native.prevent="active = 'tab-container3'">tab 3</f-button>
     </div>
     <div class="page-tab-container">
-      <mt-tab-container class="page-tabbar-tab-container" v-model="active" swipeable>
-        <mt-tab-container-item id="tab-container1">
-          <mt-cell v-for="n in 10" title="tab-container 1"></mt-cell>
-        </mt-tab-container-item>
-        <mt-tab-container-item id="tab-container2">
-          <mt-cell v-for="n in 5" title="tab-container 2"></mt-cell>
-        </mt-tab-container-item>
-        <mt-tab-container-item id="tab-container3">
-          <mt-cell v-for="n in 7" title="tab-container 3"></mt-cell>
-        </mt-tab-container-item>
-      </mt-tab-container>
+      <f-tab-container class="page-tabbar-tab-container" v-model="active" swipeable>
+        <f-tab-container-item id="tab-container1">
+          <f-cell v-for="n in 10" title="tab-container 1"></f-cell>
+        </f-tab-container-item>
+        <f-tab-container-item id="tab-container2">
+          <f-cell v-for="n in 5" title="tab-container 2"></f-cell>
+        </f-tab-container-item>
+        <f-tab-container-item id="tab-container3">
+          <f-cell v-for="n in 7" title="tab-container 3"></f-cell>
+        </f-tab-container-item>
+      </f-tab-container>
     </div>
   </div>
 </template>

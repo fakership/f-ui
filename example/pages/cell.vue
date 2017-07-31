@@ -13,7 +13,7 @@
       <span style="color: green">这里是元素</span>
     </f-cell>
     <f-cell title="标题文字">
-      <mt-button size="small" type="primary" icon="back">按钮</mt-button>
+      <f-button size="small" type="primary" icon="back">按钮</f-button>
     </f-cell>
 
     <f-cell title="标题" label="描述信息" is-link></f-cell>

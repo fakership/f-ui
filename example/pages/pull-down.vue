@@ -8,17 +8,17 @@
       translateScale : {{ moveTranslate }} 
     </div>
     <div class="page-loadmore-wrapper" ref="wrapper" :style="{ height: wrapperHeight + 'px' }">
-      <mt-loadmore :top-method="loadTop" @translate-change="translateChange" @top-status-change="handleTopChange" ref="loadmore">
+      <f-loadmore :top-method="loadTop" @translate-change="translateChange" @top-status-change="handleTopChange" ref="loadmore">
         <ul class="page-loadmore-list">
           <li v-for="item in list" class="page-loadmore-listitem">{{ item }}</li>
         </ul>
-        <div slot="top" class="mint-loadmore-top">
+        <div slot="top" class="f-loadmore-top">
           <span v-show="topStatus !== 'loading'" :class="{ 'is-rotate': topStatus === 'drop' }">↓</span>
           <span v-show="topStatus === 'loading'">
-            <mt-spinner type="snake"></mt-spinner>
+            <f-spinner type="snake"></f-spinner>
           </span>
         </div>
-      </mt-loadmore>
+      </f-loadmore>
     </div>
   </div>
 </template>
@@ -50,7 +50,7 @@
         overflow: scroll;
       }
 
-      .mint-spinner {
+      .f-spinner {
         display: inline-block;
         vertical-align: middle;
       }
@@ -63,7 +63,7 @@
     text-align: center;
     transition: .2s linear;
   }
-  @component mint-loadmore-top {
+  @component f-loadmore-top {
     span {
       display: inline-block;
       transition: .2s linear;

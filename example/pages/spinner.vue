@@ -2,21 +2,21 @@
   <div class="page-spinner">
     <div class="page-title">Spinner</div>
 
-    <mt-cell title="snake">
-      <mt-spinner color="#26a2ff" type="snake"></mt-spinner>
-    </mt-cell>
+    <f-cell title="snake">
+      <f-spinner color="#26a2ff" type="snake"></f-spinner>
+    </f-cell>
 
-    <mt-cell title="double-bounce">
-      <mt-spinner color="#26a2ff" type="double-bounce"></mt-spinner>
-    </mt-cell>
+    <f-cell title="double-bounce">
+      <f-spinner color="#26a2ff" type="double-bounce"></f-spinner>
+    </f-cell>
 
-    <mt-cell title="triple-bounce">
-      <mt-spinner color="#26a2ff" type="triple-bounce"></mt-spinner>
-    </mt-cell>
+    <f-cell title="triple-bounce">
+      <f-spinner color="#26a2ff" type="triple-bounce"></f-spinner>
+    </f-cell>
 
-    <mt-cell title="fading-circle">
-      <mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner>
-    </mt-cell>
+    <f-cell title="fading-circle">
+      <f-spinner color="#26a2ff" type="fading-circle"></f-spinner>
+    </f-cell>
   </div>
 </template>
 
@@ -35,7 +35,7 @@ export default {
 <style lang="css">
   @component-namespace page {
     @component spinner {
-      .mint-cell {
+      .f-cell {
         min-height: 50px;
       }
     }
