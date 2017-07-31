@@ -58,7 +58,7 @@
   import 'f-ui/src/style/popup.css';
 
   export default {
-    name: 'mt-actionsheet',
+    name: 'f-actionsheet',
 
     mixins: [Popup],
 

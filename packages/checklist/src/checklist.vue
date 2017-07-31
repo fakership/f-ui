@@ -1,20 +1,20 @@
 <template>
-  <div @change="$emit('change', currentValue)" class="mint-checklist" :class="{ 'is-limit': max <= currentValue.length }">
-    <label class="mint-checklist-title" v-text="title"></label>
+  <div @change="$emit('change', currentValue)" class="f-checklist" :class="{ 'is-limit': max <= currentValue.length }">
+    <label class="f-checklist-title" v-text="title"></label>
     <x-cell v-for="option in options">
-      <label class="mint-checklist-label" slot="title">
+      <label class="f-checklist-label" slot="title">
         <span
           :class="{'is-right': align === 'right'}"
-          class="mint-checkbox">
+          class="f-checkbox">
           <input
-            class="mint-checkbox-input"
+            class="f-checkbox-input"
             type="checkbox"
             v-model="currentValue"
             :disabled="option.disabled"
             :value="option.value || option">
-          <span class="mint-checkbox-core"></span>
+          <span class="f-checkbox-core"></span>
         </span>
-        <span class="mint-checkbox-label" v-text="option.label || option"></span>
+        <span class="f-checkbox-label" v-text="option.label || option"></span>
       </label>
     </x-cell>
   </div>
@@ -42,7 +42,7 @@ if (process.env.NODE_ENV === 'component') {
  * <mt-checklist :v-model="value" :options="['a', 'b', 'c']"></mt-checklist>
  */
 export default {
-  name: 'mt-checklist',
+  name: 'f-checklist',
 
   props: {
     max: Number,
@@ -85,10 +85,10 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component checklist {
 
-      .mint-cell {
+      .f-cell {
         padding: 0;
       }
 
@@ -105,7 +105,7 @@ export default {
       }
 
       @when limit {
-        .mint-checkbox-core:not(:checked) {
+        .f-checkbox-core:not(:checked) {
           background-color: $color-grey;
           border-color: $color-grey;
         }
@@ -126,7 +126,7 @@ export default {
         display: none;
 
         &:checked {
-          + .mint-checkbox-core {
+          + .f-checkbox-core {
             background-color: $color-blue;
             border-color: $color-blue;
 
@@ -137,7 +137,7 @@ export default {
           }
         }
 
-        &[disabled] + .mint-checkbox-core {
+        &[disabled] + .f-checkbox-core {
           background-color: $color-grey;
           border-color: #ccc;
         }

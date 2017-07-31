@@ -21,7 +21,7 @@
  * <mt-badge color="#333">30</mt-badge>
  */
 export default {
-  name: 'mt-badge',
+  name: 'f-badge',
 
   props: {
     color: String,

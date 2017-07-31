@@ -33,7 +33,7 @@
     </mt-checklist>
 
     <div>
-      <mt-cell title="选中的项">{{ value3 }}</mt-cell>
+      <f-cell title="选中的项">{{ value3 }}</f-cell>
     </div>
 
     <mt-checklist

@@ -64,7 +64,7 @@
   import { addClass, removeClass } from 'f-ui/src/utils/dom';
 
   export default {
-    name: 'mt-swipe',
+    name: 'f-swipe',
 
     created() {
       this.dragState = {};

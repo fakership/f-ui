@@ -1,12 +1,12 @@
 <template>
   <header
-    class="mint-header"
+    class="f-header"
     :class="{ 'is-fixed': fixed }">
-    <div class="mint-header-button is-left">
+    <div class="f-header-button is-left">
       <slot name="left"></slot>
     </div>
-    <h1 class="mint-header-title" v-text="title"></h1>
-    <div class="mint-header-button is-right">
+    <h1 class="f-header-title" v-text="title"></h1>
+    <div class="f-header-button is-right">
       <slot name="right"></slot>
     </div>
   </header>
@@ -29,7 +29,7 @@
  * </mt-header>
  */
 export default {
-  name: 'mt-header',
+  name: 'f-header',
 
   props: {
     fixed: Boolean,
@@ -41,7 +41,7 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component header {
       align-items: center;
       background-color: $color-blue;
@@ -56,7 +56,7 @@ export default {
       text-align: center;
       white-space: nowrap;
 
-      .mint-button {
+      .f-button {
         background-color: transparent;
         border: 0;
         box-shadow: none;

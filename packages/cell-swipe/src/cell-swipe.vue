@@ -5,7 +5,7 @@
     @touchstart.native="startDrag"
     @touchmove.native="onDrag"
     @touchend.native="endDrag"
-    class="mint-cell-swipe"
+    class="f-cell-swipe"
     :title="title"
     :icon="icon"
     :label="label"
@@ -15,10 +15,10 @@
     :value="value">
     <div
       slot="right"
-      class="mint-cell-swipe-buttongroup"
+      class="f-cell-swipe-buttongroup"
       ref="right">
       <a
-        class="mint-cell-swipe-button"
+        class="f-cell-swipe-button"
         v-for="btn in right"
         :style="btn.style"
         @click.stop="btn.handler && btn.handler(), swipeMove()"
@@ -26,10 +26,10 @@
     </div>
     <div
       slot="left"
-      class="mint-cell-swipe-buttongroup"
+      class="f-cell-swipe-buttongroup"
       ref="left">
       <a
-        class="mint-cell-swipe-button"
+        class="f-cell-swipe-button"
         v-for="btn in left"
         :style="btn.style"
         @click.stop="btn.handler && btn.handler(), swipeMove()"
@@ -76,7 +76,7 @@ if (process.env.NODE_ENV === 'component') {
  * </mt-cell-swipe>
  */
 export default {
-  name: 'mt-cell-swipe',
+  name: 'f-cell-swipe',
 
   components: { XCell },
 
@@ -100,7 +100,7 @@ export default {
   },
 
   mounted() {
-    this.wrap = this.$refs.cell.$el.querySelector('.mint-cell-wrapper');
+    this.wrap = this.$refs.cell.$el.querySelector('.f-cell-wrapper');
     this.leftElm = this.$refs.left;
     this.rightElm = this.$refs.right;
     this.leftWrapElm = this.leftElm.parentNode;
@@ -207,7 +207,7 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component cell-swipe {
       @descendent buttongroup {
         height: 100%;
@@ -220,13 +220,13 @@ export default {
         line-height: 48px;
       }
 
-      .mint-cell-wrapper {
+      .f-cell-wrapper {
         position: relative;
       }
 
-      .mint-cell-wrapper,
-      .mint-cell-left,
-      .mint-cell-right {
+      .f-cell-wrapper,
+      .f-cell-left,
+      .f-cell-right {
         transition: transform 150ms ease-in-out;
       }
     }

@@ -1,34 +1,34 @@
 <template>
-  <div class="mint-indexlist">
-    <ul class="mint-indexlist-content" ref="content" :style="{ 'height': currentHeight + 'px', 'margin-right': navWidth + 'px'}">
+  <div class="f-indexlist">
+    <ul class="f-indexlist-content" ref="content" :style="{ 'height': currentHeight + 'px', 'margin-right': navWidth + 'px'}">
       <slot></slot>
     </ul>
-    
-    <div class="mint-indexlist-nav" @touchstart="handleTouchStart" ref="nav">
-      <ul class="mint-indexlist-navlist">
-        <li class="mint-indexlist-navitem" v-for="section in sections">{{ section.index }}</li>
+
+    <div class="f-indexlist-nav" @touchstart="handleTouchStart" ref="nav">
+      <ul class="f-indexlist-navlist">
+        <li class="f-indexlist-navitem" v-for="section in sections">{{ section.index }}</li>
       </ul>
     </div>
-    
-    <div class="mint-indexlist-indicator" v-if="showIndicator" v-show="moving">{{ currentIndicator }}</div>
+
+    <div class="f-indexlist-indicator" v-if="showIndicator" v-show="moving">{{ currentIndicator }}</div>
   </div>
 </template>
 
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component indexlist {
       width: 100%;
       position: relative;
       overflow: hidden;
-      
+
       @descendent content {
         margin: 0;
         padding: 0;
         overflow: auto;
       }
-      
+
       @descendent nav {
         position: absolute;
         top: 0;
@@ -43,7 +43,7 @@
         flex-direction: column;
         justify-content: center;
       }
-      
+
       @descendent navlist {
         padding: 0;
         margin: 0;
@@ -52,14 +52,14 @@
         display: flex;
         flex-direction: column;
       }
-      
+
       @descendent navitem {
         padding: 2px 6px;
         font-size: 12px;
         user-select: none;
         -webkit-touch-callout: none;
       }
-      
+
       @descendent indicator {
         position: absolute;
         size: 50px;
@@ -79,7 +79,7 @@
 
 <script type="text/babel">
   export default {
-    name: 'mt-index-list',
+    name: 'f-index-list',
 
     props: {
       height: Number,
@@ -154,7 +154,7 @@
 
       scrollList(y) {
         let currentItem = document.elementFromPoint(this.navOffsetX, y);
-        if (!currentItem || !currentItem.classList.contains('mint-indexlist-navitem')) {
+        if (!currentItem || !currentItem.classList.contains('f-indexlist-navitem')) {
           return;
         }
         this.currentIndicator = currentItem.innerText;

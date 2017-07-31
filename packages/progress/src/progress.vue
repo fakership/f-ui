@@ -1,16 +1,16 @@
 <template>
-  <div class="mt-progress">
+  <div class="f-progress">
     <slot name="start"></slot>
-    <div class="mt-progress-content">
-      <div class="mt-progress-runway" :style="{ height: barHeight + 'px' }"></div>
-      <div class="mt-progress-progress" :style="{ width: value + '%', height: barHeight + 'px' }"></div>
+    <div class="f-progress-content">
+      <div class="f-progress-runway" :style="{ height: barHeight + 'px' }"></div>
+      <div class="f-progress-progress" :style="{ width: value + '%', height: barHeight + 'px' }"></div>
     </div>
     <slot name="end"></slot>
   </div>
 </template>
 
 <style>
-  @component-namespace mt {
+  @component-namespace f {
     @component progress {
       position: relative;
       display: flex;
@@ -59,7 +59,7 @@
 
 <script type="text/ecmascript-6">
   export default {
-    name: 'mt-progress',
+    name: 'f-progress',
 
     props: {
       value: Number,

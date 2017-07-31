@@ -1,6 +1,6 @@
 <template>
   <x-cell
-    class="mint-field"
+    class="f-field"
     :title="label"
     v-clickoutside="doCloseActive"
     :class="[{
@@ -10,7 +10,7 @@
     <textarea
       @change="$emit('change', currentValue)"
       ref="textarea"
-      class="mint-field-core"
+      class="f-field-core"
       :placeholder="placeholder"
       v-if="type === 'textarea'"
       :rows="rows"
@@ -21,7 +21,7 @@
     <input
       @change="$emit('change', currentValue)"
       ref="input"
-      class="mint-field-core"
+      class="f-field-core"
       :placeholder="placeholder"
       :number="type === 'number'"
       v-else
@@ -33,15 +33,15 @@
       @input="handleInput">
     <div
       @click="handleClear"
-      class="mint-field-clear"
+      class="f-field-clear"
       v-if="!disableClear"
       v-show="currentValue && type !== 'textarea' && active">
       <i class="mintui mintui-field-error"></i>
     </div>
-    <span class="mint-field-state" v-if="state" :class="['is-' + state]">
+    <span class="f-field-state" v-if="state" :class="['is-' + state]">
       <i class="mintui" :class="['mintui-field-' + state]"></i>
     </span>
-    <div class="mint-field-other">
+    <div class="f-field-other">
       <slot></slot>
     </div>
   </x-cell>
@@ -74,7 +74,7 @@ if (process.env.NODE_ENV === 'component') {
  * <mt-field v-model="value" label="邮箱" placeholder="成功状态" state="success"></mt-field>
  */
 export default {
-  name: 'mt-field',
+  name: 'f-field',
 
   data() {
     return {
@@ -151,28 +151,28 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component field {
       display: flex;
 
       @when textarea {
         align-items: inherit;
 
-        .mint-cell-title {
+        .f-cell-title {
           padding: 10px 0;
         }
 
-        .mint-cell-value {
+        .f-cell-value {
           padding: 5px 0;
         }
       }
 
-      .mint-cell-title {
+      .f-cell-title {
         width: 105px;
         flex: none;
       }
 
-      .mint-cell-value {
+      .f-cell-value {
         flex: 1;
         color: inherit;
         display: flex;
@@ -223,7 +223,7 @@ export default {
       }
 
       @when nolabel {
-        .mint-cell-title {
+        .f-cell-title {
           display: none;
         }
       }

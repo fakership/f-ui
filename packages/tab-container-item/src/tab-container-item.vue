@@ -1,7 +1,7 @@
 <template>
   <div
     v-show="$parent.swiping || id === $parent.currentActive"
-    class="mint-tab-container-item">
+    class="f-tab-container-item">
     <slot></slot>
   </div>
 </template>
@@ -22,14 +22,14 @@
  * </mt-tab-container>
  */
 export default {
-  name: 'mt-tab-container-item',
+  name: 'f-tab-container-item',
 
   props: ['id']
 };
 </script>
 
 <style>
-  @component-namespace mint {
+  @component-namespace f {
     @component tab-container-item {
       flex-shrink: 0;
       width: 100%;

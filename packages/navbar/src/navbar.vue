@@ -28,7 +28,7 @@
  *
  */
 export default {
-  name: 'mt-navbar',
+  name: 'f-navbar',
 
   props: {
     fixed: Boolean,

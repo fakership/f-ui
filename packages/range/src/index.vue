@@ -1,17 +1,17 @@
 <template>
-  <div class="mt-range" :class="{ 'mt-range--disabled': disabled }">
+  <div class="f-range" :class="{ 'f-range--disabled': disabled }">
     <slot name="start"></slot>
-    <div class="mt-range-content" ref="content">
-      <div class="mt-range-runway" :style="{ 'border-top-width': barHeight + 'px' }"></div>
-      <div class="mt-range-progress" :style="{ width: progress + '%', height: barHeight + 'px' }"></div>
-      <div class="mt-range-thumb" ref="thumb" :style="{ left: progress + '%' }"></div>
+    <div class="f-range-content" ref="content">
+      <div class="f-range-runway" :style="{ 'border-top-width': barHeight + 'px' }"></div>
+      <div class="f-range-progress" :style="{ width: progress + '%', height: barHeight + 'px' }"></div>
+      <div class="f-range-thumb" ref="thumb" :style="{ left: progress + '%' }"></div>
     </div>
     <slot name="end"></slot>
   </div>
 </template>
 
 <style>
-  @component-namespace mt {
+  @component-namespace f {
     @component range {
       position: relative;
       display: flex;
@@ -79,7 +79,7 @@
   import draggable from './draggable';
 
   export default {
-    name: 'mt-range',
+    name: 'f-range',
 
     props: {
       min: {

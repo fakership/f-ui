@@ -53,7 +53,7 @@ if (process.env.NODE_ENV === 'component') {
  * </mt-search>
  */
 export default {
-  name: 'mt-search',
+  name: 'f-search',
 
   data() {
     return {

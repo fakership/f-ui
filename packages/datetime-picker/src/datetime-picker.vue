@@ -1,14 +1,14 @@
 <template>
-  <mt-popup v-model="visible" position="bottom" class="mint-datetime">
+  <mt-popup v-model="visible" position="bottom" class="f-datetime">
     <mt-picker
       :slots="dateSlots"
       @change="onChange"
       :visible-item-count="visibleItemCount"
-      class="mint-datetime-picker"
+      class="f-datetime-picker"
       ref="picker"
       show-toolbar>
-      <span class="mint-datetime-action mint-datetime-cancel" @click="visible = false;$emit('cancel')">{{ cancelText }}</span>
-      <span class="mint-datetime-action mint-datetime-confirm" @click="confirm">{{ confirmText }}</span>
+      <span class="f-datetime-action f-datetime-cancel" @click="visible = false;$emit('cancel')">{{ cancelText }}</span>
+      <span class="f-datetime-action f-datetime-confirm" @click="confirm">{{ confirmText }}</span>
     </mt-picker>
   </mt-popup>
 </template>
@@ -16,7 +16,7 @@
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component datetime {
       width: 100%;
 
@@ -65,7 +65,7 @@
   };
 
   export default {
-    name: 'mt-datetime-picker',
+    name: 'f-datetime-picker',
 
     props: {
       cancelText: {

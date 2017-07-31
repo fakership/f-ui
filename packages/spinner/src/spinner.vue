@@ -43,7 +43,7 @@ const parseSpinner = function(index) {
  * <mt-spinner :size="30" color="#999"></mt-spinner>
  */
 export default {
-  name: 'mt-spinner',
+  name: 'f-spinner',
 
   computed: {
     spinner() {

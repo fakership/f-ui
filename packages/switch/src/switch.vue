@@ -18,7 +18,7 @@
  * <mt-switch v-model="value"></mt-switch>
  */
 export default {
-  name: 'mt-switch',
+  name: 'f-switch',
 
   props: {
     value: Boolean,

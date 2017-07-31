@@ -1,9 +1,9 @@
 <template>
-  <a class="mint-tab-item"
+  <a class="f-tab-item"
     @click="$parent.$emit('input', id)"
     :class="{ 'is-selected': $parent.value === id }">
-    <div class="mint-tab-item-icon"><slot name="icon"></slot></div>
-    <div class="mint-tab-item-label"><slot></slot></div>
+    <div class="f-tab-item-icon"><slot name="icon"></slot></div>
+    <div class="f-tab-item-label"><slot></slot></div>
   </a>
 </template>
 
@@ -23,7 +23,7 @@
  * </mt-tab-item>
  */
 export default {
-  name: 'mt-tab-item',
+  name: 'f-tab-item',
 
   props: ['id']
 };
@@ -32,7 +32,7 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component tab-item {
       display: block;
       padding: 7px 0;

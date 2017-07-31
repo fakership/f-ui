@@ -1,6 +1,6 @@
 <template>
-  <li class="mint-indexsection">
-    <p class="mint-indexsection-index">{{ index }}</p>
+  <li class="f-indexsection">
+    <p class="f-indexsection-index">{{ index }}</p>
     <ul>
       <slot></slot>
     </ul>
@@ -8,11 +8,11 @@
 </template>
 
 <style lang="css">
-  @component-namespace mint {
+  @component-namespace f {
     @component indexsection {
       padding: 0;
       margin: 0;
-      
+
       @descendent index {
         margin: 0;
         padding: 10px;
@@ -28,7 +28,7 @@
 
 <script type="text/babel">
   export default {
-    name: 'mt-index-section',
+    name: 'f-index-section',
 
     props: {
       index: {

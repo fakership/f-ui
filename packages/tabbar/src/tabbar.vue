@@ -1,5 +1,5 @@
 <template>
-  <div class="mint-tabbar" :class="{
+  <div class="f-tabbar" :class="{
       'is-fixed': fixed
     }">
     <slot></slot>
@@ -42,7 +42,7 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component tabbar {
       background-image:linear-gradient(180deg, $color-grey, $color-grey 50%, transparent 50%);
       background-size: 100% 1px;

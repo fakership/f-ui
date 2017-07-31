@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === 'component') {
  * <mt-button size="large" icon="back" type="primary">按钮</mt-button>
  */
 export default {
-  name: 'mt-button',
+  name: 'f-button',
 
   methods: {
     handleClick(evt) {

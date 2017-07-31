@@ -6,17 +6,17 @@
     @mousemove="onDrag"
     @mouseleave="endDrag"
     @touchend="endDrag"
-    class="mint-tab-container">
+    class="f-tab-container">
     <div
       ref="wrap"
-      class="mint-tab-container-wrap">
+      class="f-tab-container-wrap">
       <slot></slot>
     </div>
   </div>
 </template>
 
 <style lang="css">
-  @component-namespace mint {
+  @component-namespace f {
     @component tab-container {
       overflow: hidden;
       position: relative;
@@ -51,7 +51,7 @@ import arrayFindIndex from 'array-find-index';
  * </mt-tab-container>
  */
 export default {
-  name: 'mt-tab-container',
+  name: 'f-tab-container',
 
   props: {
     value: {},

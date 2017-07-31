@@ -1,20 +1,20 @@
 <template>
-  <div class="mint-radiolist" @change="$emit('change', currentValue)">
-    <label class="mint-radiolist-title" v-text="title"></label>
+  <div class="f-radiolist" @change="$emit('change', currentValue)">
+    <label class="f-radiolist-title" v-text="title"></label>
     <x-cell v-for="option in options">
-      <label class="mint-radiolist-label" slot="title">
+      <label class="f-radiolist-label" slot="title">
         <span
           :class="{'is-right': align === 'right'}"
-          class="mint-radio">
+          class="f-radio">
           <input
-            class="mint-radio-input"
+            class="f-radio-input"
             type="radio"
             v-model="currentValue"
             :disabled="option.disabled"
             :value="option.value || option">
-          <span class="mint-radio-core"></span>
+          <span class="f-radio-core"></span>
         </span>
-        <span class="mint-radio-label" v-text="option.label || option"></span>
+        <span class="f-radio-label" v-text="option.label || option"></span>
       </label>
     </x-cell>
   </div>
@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === 'component') {
  * <mt-radio v-model="value" :options="['a', 'b', 'c']"></mt-radio>
  */
 export default {
-  name: 'mt-radio',
+  name: 'f-radio',
 
   props: {
     title: String,
@@ -76,10 +76,10 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component radiolist {
 
-      .mint-cell {
+      .f-cell {
         padding: 0;
       }
 
@@ -110,7 +110,7 @@ export default {
         display: none;
 
         &:checked {
-          + .mint-radio-core {
+          + .f-radio-core {
             background-color: $color-blue;
             border-color: $color-blue;
 
@@ -121,7 +121,7 @@ export default {
           }
         }
 
-        &[disabled] + .mint-radio-core {
+        &[disabled] + .f-radio-core {
           background-color: $color-grey;
           border-color: #ccc;
         }

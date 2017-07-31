@@ -1,13 +1,13 @@
 <template>
   <transition :name="currentTransition">
-    <div v-show="currentValue" class="mint-popup" :class="[position ? 'mint-popup-' + position : '']">
+    <div v-show="currentValue" class="f-popup" :class="[position ? 'f-popup-' + position : '']">
       <slot></slot>
     </div>
   </transition>
 </template>
 
 <style>
-  @component-namespace mint {
+  @component-namespace f {
     @component popup {
       position: fixed;
       background: #fff;
