@@ -18,6 +18,13 @@
 
 在项目根目录下的`packages`里添加你想添加组件的目录，如果不需要支持`js`的方式进行调用，则只需要添加`[name].vue`文件即可，如果需要支持`js`，则还需要添加`[name].js`。
 
+## make命令的使用
+
+* make dev: 启动开发环境,会开启`example`的相关网站，对`example`进行开发
+* make pub: 发布`f-ui`的版本
+* make pub-all: 发布所有的组件版本
+* 更多命令请看`makefile`文件
+
 ## Usage
 
 导入全部组件的方式
