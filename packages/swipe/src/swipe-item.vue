@@ -1,5 +1,5 @@
 <template>
-  <div class="mint-swipe-item">
+  <div class="f-swipe-item">
     <slot></slot>
   </div>
 </template>

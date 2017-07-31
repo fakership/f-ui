@@ -1,6 +1,6 @@
 <template>
   <span
-    class="mint-badge"
+    class="f-badge"
     :style="{ backgroundColor: color }"
     :class="['is-' + type, 'is-size-' + size]">
     <slot></slot>
@@ -39,7 +39,7 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component badge {
       color: $color-white;
       text-align: center;

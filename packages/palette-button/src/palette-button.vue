@@ -1,10 +1,10 @@
 <template>
-  <div class="mint-palette-button" :class="{ expand: expanded, 'mint-palette-button-active': transforming }"
+  <div class="f-palette-button" :class="{ expand: expanded, 'f-palette-button-active': transforming }"
     @animationend="onMainAnimationEnd" @webkitAnimationEnd="onMainAnimationEnd" @mozAnimationEnd="onMainAnimationEnd">
-    <div class="mint-sub-button-container">
+    <div class="f-sub-button-container">
       <slot></slot>
     </div>
-    <div @touchstart="toggle" class="mint-main-button" :style="mainButtonStyle">
+    <div @touchstart="toggle" class="f-main-button" :style="mainButtonStyle">
       {{content}}
     </div>
   </div>
@@ -43,7 +43,7 @@
       },
 
       mainButtonStyle: {
-        type: String,           // 应用到 mint-main-button 上的 class
+        type: String,           // 应用到 f-main-button 上的 class
         default: ''
       }
     },
@@ -111,7 +111,7 @@
 </script>
 
 <style>
-  .mint-palette-button{
+  .f-palette-button{
     display:inline-block;
     position:relative;
     border-radius:50%;
@@ -122,7 +122,7 @@
     transition:transform .1s ease-in-out;
   }
 
-  .mint-main-button{
+  .f-main-button{
     position:absolute;
     top:0;
     left:0;
@@ -132,10 +132,10 @@
     background-color:blue;
     font-size:2em;
   }
-  .mint-palette-button-active{
-    animation: mint-zoom 0.5s ease-in-out;
+  .f-palette-button-active{
+    animation: f-zoom 0.5s ease-in-out;
   }
-  .mint-sub-button-container>*{
+  .f-sub-button-container>*{
     position:absolute;
     top:15px;
     left:15px;
@@ -144,7 +144,7 @@
     transition: transform .3s ease-in-out;
   }
 
-  @keyframes mint-zoom{
+  @keyframes f-zoom{
     0% {transform:scale(1)}
     10% {transform:scale(1.1)}
     30% {transform:scale(0.9)}

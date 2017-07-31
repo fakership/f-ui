@@ -1,5 +1,5 @@
 <style>
-  @component-namespace mint {
+  @component-namespace f {
     @component swipe {
       overflow: hidden;
       position: relative;
@@ -47,12 +47,12 @@
 </style>
 
 <template>
-  <div class="mint-swipe">
-    <div class="mint-swipe-items-wrap" ref="wrap">
+  <div class="f-swipe">
+    <div class="f-swipe-items-wrap" ref="wrap">
       <slot></slot>
     </div>
-    <div class="mint-swipe-indicators" v-show="showIndicators">
-      <div class="mint-swipe-indicator"
+    <div class="f-swipe-indicators" v-show="showIndicators">
+      <div class="f-swipe-indicator"
         v-for="(page, $index) in pages"
         :class="{ 'is-active': $index === index }"></div>
     </div>

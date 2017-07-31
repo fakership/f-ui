@@ -1,5 +1,5 @@
 <template>
-  <div class="mint-navbar" :class="{ 'is-fixed': fixed }">
+  <div class="f-navbar" :class="{ 'is-fixed': fixed }">
     <slot></slot>
   </div>
 </template>
@@ -40,7 +40,7 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component navbar {
       background-color: $color-white;
       display: flex;
@@ -51,7 +51,7 @@ export default {
         z-index: $z-index-normal;
       }
 
-      .mint-tab-item {
+      .f-tab-item {
         padding: 17px 0;
         font-size: 15px;
 

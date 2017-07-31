@@ -1,8 +1,8 @@
 <template>
-  <label class="mint-switch">
-    <input class="mint-switch-input" :disabled="disabled" @change="$emit('change', currentValue)" type="checkbox" v-model="currentValue">
-    <span class="mint-switch-core"></span>
-    <div class="mint-switch-label"><slot></slot></div>
+  <label class="f-switch">
+    <input class="f-switch-input" :disabled="disabled" @change="$emit('change', currentValue)" type="checkbox" v-model="currentValue">
+    <span class="f-switch-core"></span>
+    <div class="f-switch-label"><slot></slot></div>
   </label>
 </template>
 
@@ -43,7 +43,7 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component switch {
       display: flex;
       align-items: center;
@@ -94,7 +94,7 @@ export default {
         display: none;
 
         &:checked {
-          + .mint-switch-core {
+          + .f-switch-core {
             border-color: $color-blue;
             background-color: $color-blue;
 

@@ -1,19 +1,19 @@
 <template>
   <button
     :type="nativeType"
-    class="mint-button"
-    :class="['mint-button--' + type, 'mint-button--' + size, {
+    class="f-button"
+    :class="['f-button--' + type, 'f-button--' + size, {
       'is-disabled': disabled,
       'is-plain': plain
     }]"
     @click="handleClick"
     :disabled="disabled">
-    <span class="mint-button-icon" v-if="icon || $slots.icon">
+    <span class="f-button-icon" v-if="icon || $slots.icon">
       <slot name="icon">
         <i v-if="icon" class="mintui" :class="'mintui-' + icon"></i>
       </slot>
     </span>
-    <label class="mint-button-text"><slot></slot></label>
+    <label class="f-button-text"><slot></slot></label>
   </button>
 </template>
 
@@ -81,7 +81,7 @@ export default {
 <style lang="css">
   @import "../../../src/style/var.css";
 
-  @component-namespace mint {
+  @component-namespace f {
     @component button {
       appearance: none;
       border-radius: 4px;
