@@ -1,7 +1,7 @@
 {
   "name": "f-range",
   "description": "",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "author": "long.zhang@ele.me",
   "homepage": "https://github.com/fakership/f-ui",
