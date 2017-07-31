@@ -30,7 +30,7 @@
  * </mt-tabbar>
  */
 export default {
-  name: 'mt-tabbar',
+  name: 'f-tabbar',
 
   props: {
     fixed: Boolean,

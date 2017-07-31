@@ -85,7 +85,7 @@
   }
 
   export default {
-    name: 'mt-popup',
+    name: 'f-popup',
 
     mixins: [Popup],
 

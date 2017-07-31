@@ -65,7 +65,7 @@
 
 <script type="text/babel">
   export default {
-    name: 'mt-picker',
+    name: 'f-picker',
 
     componentName: 'picker',
 
