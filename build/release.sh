@@ -19,5 +19,6 @@ then
   # publish
   git push fakership refs/tags/v$VERSION
   git push fakership master
+  git push origin dev
   npm publish
 fi
