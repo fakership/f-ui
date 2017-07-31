@@ -4,7 +4,9 @@
 `f-ui`此项目是基于`elemefe`的`mint-ui`来搭建的项目，后续本人会持续的维护改进.
 
 ## 技术体系
+
 `f-ui`是基于`vue2.0`。
+
 	* js方面采用`es6`格式书写
 	* css模块化用的是`postcss`
 	* 代码规范上采用`eleme`的配置`eslint-config-eleme`
@@ -13,10 +15,13 @@
 	* 通过`sh`实现了一键化打包、部署、推送
 
 ## 如何添加组件？
+
 在项目根目录下的`packages`里添加你想添加组件的目录，如果不需要支持`js`的方式进行调用，则只需要添加`[name].vue`文件即可，如果需要支持`js`，则还需要添加`[name].js`。
 
 ## Usage
+
 导入全部组件的方式
+
 ```javascript
 import Vue from 'vue';
 import F from 'f-ui';
@@ -34,6 +39,7 @@ Vue.component(Cell.name, Cell);
 Vue.component(Checklist.name, Checklist);
 ```
 相当于
+
 ```javascript
 import Vue from 'vue';
 import Mint from 'f-ui';
