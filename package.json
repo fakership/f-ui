@@ -6,7 +6,7 @@
     "component",
     "vue",
     "mobile",
-    "f"
+    "f-ui"
   ],
   "main": "lib/f-ui.common.js",
   "style": "lib/style.css",

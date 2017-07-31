@@ -13,6 +13,9 @@ dist-all:
 deploy:
 	npm run deploy
 
+clean:
+	npm run clean
+
 pub:
 	npm run pub
 
