@@ -1,4 +1,4 @@
-# F UI
+# F-UI
 
 ## 开头
 `f-ui`此项目是基于`elemefe`的`mint-ui`来搭建的项目，后续本人会持续的维护改进.
@@ -30,7 +30,7 @@ import 'f-ui/lib/style.css';
 Vue.use(F);
 ```
 按需导入组件
-[babel-plugin-component](https://www.npmjs.com/package/babel-plugin-component))
+[babel-plugin-component](https://www.npmjs.com/package/babel-plugin-component)
 
 ```javascript
 import { Cell, Checklist } from 'f-ui';
@@ -64,9 +64,10 @@ Installation
 npm i babel-plugin-component -D
 ```
 
-Usage
+如何使用这个插件?
 
-.babelrc
+更改项目下的`.babelrc`文件
+
 ```json
 {
   "plugins": ["other-plugin", ["component", [
