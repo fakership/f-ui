@@ -59,7 +59,7 @@ export default {
         z-index: $z-index-normal;
       }
 
-      > .mint-tab-item.is-selected {
+      > .f-tab-item.is-selected {
         background-color: $tabbar-tab-item-selected-background-color;
         color: $tabbar-tab-item-selected-color;
       }

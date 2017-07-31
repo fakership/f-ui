@@ -1,15 +1,15 @@
-# mint-progress
+# f-progress
 > A mint component
 
 ## Installation
 ```shell
-npm i mint-progress -D
+npm i f-progress -D
 ```
 
 ## Usage
 ```javascript
 import Vue from 'vue'
-import MintProgress from 'mint-progress'
+import MintProgress from 'f-progress'
 
 Vue.use(MintProgress)
 ```
@@ -18,9 +18,9 @@ or
 
 ```javascript
 import Vue from 'vue'
-import { MintProgress } from 'mint-progress'
+import { MintProgress } from 'f-progress'
 
-Vue.component('mint-progress', MintProgress)
+Vue.component('f-progress', MintProgress)
 ```
 
 ## Development

@@ -1,12 +1,12 @@
 {
-  "name": "mint-tab-item",
+  "name": "f-tab-item",
   "description": "",
   "version": "0.1.0",
   "main": "lib/index.js",
-  "author": "elemefe",
-  "homepage": "https://github.com/ElemeFE/f-ui",
+  "author": "fakership",
+  "homepage": "https://github.com/fakership/f-ui",
   "license": "MIT",
-  "repository": "https://github.com/ElemeFE/f-ui/tree/master/components/mint-tab-item",
+  "repository": "https://github.com/fakership/f-ui/tree/master/components/f-tab-item",
   "dependencies": {
   }
 }

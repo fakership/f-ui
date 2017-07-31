@@ -1,21 +1,21 @@
 # Overview
-mint-actionsheet is an action sheet component for vue.js
+f-actionsheet is an action sheet component for vue.js
 
 # Installation
-First, install `mint-actionsheet` from npm:
+First, install `f-actionsheet` from npm:
 ```bash
-$ npm install mint-actionsheet
+$ npm install f-actionsheet
 ```
 
 Import it:
 ```Javascript
-require ('mint-actionsheet/lib/index.css');
+require ('f-actionsheet/lib/index.css');
 
 // ES6 mudule
-import Actionsheet from 'mint-actionsheet';
+import Actionsheet from 'f-actionsheet';
 
 // CommonJS
-const Actionsheet = require('mint-actionsheet').default;
+const Actionsheet = require('f-actionsheet').default;
 ```
 
 Register component:

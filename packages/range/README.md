@@ -1,15 +1,15 @@
-# mint-range
+# f-range
 > A mint component
 
 ## Installation
 ```shell
-npm i mint-range -D
+npm i f-range -D
 ```
 
 ## Usage
 ```javascript
 import Vue from 'vue'
-import MintRange from 'mint-range'
+import MintRange from 'f-range'
 
 Vue.use(MintRange)
 ```
@@ -18,9 +18,9 @@ or
 
 ```javascript
 import Vue from 'vue'
-import { MintRange } from 'mint-range'
+import { MintRange } from 'f-range'
 
-Vue.component('mint-range', MintRange)
+Vue.component('f-range', MintRange)
 ```
 
 ## Development

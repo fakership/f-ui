@@ -1,1 +1,1 @@
-# mint-lazyload
+# f-lazyload

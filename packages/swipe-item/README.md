@@ -1,1 +1,1 @@
-# mint-swipe-item
+# f-swipe-item

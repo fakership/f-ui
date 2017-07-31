@@ -1,12 +1,12 @@
 {
-  "name": "mint-checklist",
+  "name": "f-checklist",
   "description": "",
   "version": "0.1.0",
   "main": "lib/index.js",
-  "author": "elemefe",
-  "homepage": "https://github.com/ElemeFE/f-ui",
+  "author": "fakership",
+  "homepage": "https://github.com/fakership/f-ui",
   "license": "MIT",
-  "repository": "https://github.com/ElemeFE/f-ui/tree/master/components/mint-checklist",
+  "repository": "https://github.com/fakership/f-ui/tree/master/components/f-checklist",
   "dependencies": {
   }
 }

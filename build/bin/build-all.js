@@ -18,6 +18,7 @@ Object.keys(components).forEach(key => {
 });
 
 const paths = componentPaths.join(',');
+console.log(paths);
 const cli = `node_modules/.bin/cooking build -c ${paths} -p`;
 
 execSync(cli, {

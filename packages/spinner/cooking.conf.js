@@ -14,7 +14,7 @@ cooking.set({
   dist: path.join(__dirname, 'lib'),
   template: false,
   format: 'umd',
-  moduleName: 'MintSpinner',
+  moduleName: 'FSpinner',
   extractCSS: '[name]/style.css',
   extends: config.extends,
   alias: config.alias,

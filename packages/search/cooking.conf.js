@@ -9,7 +9,7 @@ cooking.set({
   dist: path.join(__dirname, 'lib'),
   template: false,
   format: 'umd',
-  moduleName: 'MintSearch',
+  moduleName: 'FSearch',
   extractCSS: 'style.css',
   extends: config.extends,
   alias: config.alias,

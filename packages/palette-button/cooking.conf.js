@@ -8,7 +8,7 @@ cooking.set({
   dist: path.join(__dirname, 'lib'),
   template: false,
   format: 'umd',
-  moduleName: 'MintPaletteButton',
+  moduleName: 'FPaletteButton',
   extractCSS: 'style.css',
 
   extends: ['vue', 'saladcss']

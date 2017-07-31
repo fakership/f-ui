@@ -1,1 +1,1 @@
-# mint-switch
+# f-switch

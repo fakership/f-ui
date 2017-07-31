@@ -1,1 +1,1 @@
-# mint-infinite-scroll
+# f-infinite-scroll

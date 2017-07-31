@@ -28,11 +28,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElemeFE/f-ui.git"
+    "url": "https://github.com/fakership/f-ui.git"
   },
-  "homepage": "https://github.com/ElemeFE/f-ui#readme",
+  "homepage": "https://github.com/fakership/f-ui.git",
   "bugs": {
-    "url": "https://github.com/ElemeFE/f-ui/issues"
+    "url": "https://github.com/fakership/f-ui/issues"
   },
   "author": "fakership",
   "license": "MIT",
@@ -49,6 +49,7 @@
     "cooking-buble": "^0.1.2",
     "cooking-lint": "^0.1.2",
     "cooking-saladcss": "^0.4.0",
+    "cooking-vue": "^0.5.2",
     "cooking-vue2": "^0.2.2",
     "css-loader": "^0.25.0",
     "eslint": "^3.12.2",

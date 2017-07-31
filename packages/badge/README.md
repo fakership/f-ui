@@ -1,1 +1,1 @@
-# mint-badge
+# f-badge

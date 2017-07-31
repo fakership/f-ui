@@ -8,13 +8,13 @@ npm install vue-picker --save
 ```
 
 ```JavaScript
-require ('mint-picker/lib/index.css');
+require ('f-picker/lib/index.css');
 
 // ES6 mudule
-import Picker from 'mint-picker';
+import Picker from 'f-picker';
 
 // CommonJS
-const Picker = require('mint-picker').default;
+const Picker = require('f-picker').default;
 ```
 Register component:
 ```Javascript

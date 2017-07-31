@@ -1,11 +1,11 @@
 {
-  "name": "mint-picker",
+  "name": "f-picker",
   "description": "",
   "version": "0.1.0",
   "main": "lib/index.js",
-  "homepage": "https://github.com/ElemeFE/f-ui",
+  "homepage": "https://github.com/fakership/f-ui",
   "license": "MIT",
-  "repository": "https://github.com/ElemeFE/f-ui/tree/master/components/mint-picker",
+  "repository": "https://github.com/fakership/f-ui/tree/master/components/f-picker",
   "keywords": [
     "picker",
     "multi slots",
